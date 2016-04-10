@@ -1,0 +1,25 @@
+{
+  "name": "hackspace_slackbot",
+  "version": "0.0.1",
+  "description": "Selects three random cards for hackspace invention",
+  "main": "hackspace_slackbot.js",
+  "dependencies": {
+    "@slack/client": "^2.3.0",
+    "bluebird": "^3.3.4",
+    "node-images": "^1.5.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libbymiller/hackspace_slackbot.git"
+  },
+  "author": "libbymiller",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/libbymiller/hackspace_slackbot/issues"
+  },
+  "homepage": "https://github.com/libbymiller/hackspace_slackbot#readme"
+}
