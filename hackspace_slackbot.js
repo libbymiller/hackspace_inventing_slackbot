@@ -46,9 +46,11 @@ slack.on('message', function handleRtmMessage(message) {
  
     var channel = slack.dataStore.getChannelGroupOrDMById(message.channel);
     var user = slack.dataStore.getUserById(message.user);
-    var m_text = message.text.replace(/[\.\,\/#!$%\^&\*;:{}=\-`~\(\)\?\"\'\“\@\<\>]/g," ").toLowerCase();
-    console.log("m text "+m_text);
-    if(m_text && (m_text.match(bot.name) || m_text.match("U0ZC159Q9".toLowerCase()) )){
+    if(message.text){
+
+      var m_text = message.text.replace(/[\.\,\/#!$%\^&\*;:{}=\-`~\(\)\?\"\'\“\@\<\>]/g," ").toLowerCase();
+      console.log("m text "+m_text);
+      if(m_text && (m_text.match(bot.name) || m_text.match("U0ZC159Q9".toLowerCase()) )){
          slack.sendTyping(message.channel);
          var file1_int = getRandomIntInclusive(0,25);
          var file2_int = getRandomIntInclusive(26,52);
@@ -77,7 +79,7 @@ slack.on('message', function handleRtmMessage(message) {
              slack.sendMessage('What could this be?', channel.id);
            }
          });
-
+      }
     }
 });
 
