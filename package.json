@@ -1,12 +1,13 @@
 {
-  "name": "hackspace_slackbot",
+  "name": "mh_slackbot",
   "version": "0.0.1",
-  "description": "Selects three random cards for hackspace invention",
-  "main": "hackspace_slackbot.js",
+  "description": "Selects three random cards for mh hackday brainstorming",
+  "main": "mh_slackbot.js",
   "dependencies": {
-    "@slack/client": "^2.3.0",
-    "bluebird": "^3.3.4",
-    "node-images": "^1.5.5"
+    "@slack/client": "*",
+    "bluebird": "*",
+    "images": "^3.0.1",
+    "node-images": "*"
   },
   "devDependencies": {},
   "scripts": {
