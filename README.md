@@ -34,6 +34,8 @@ nvm use 8.0
 
 slack official node client: https://github.com/slackhq/node-slack-client
 
+generate more cards: https://github.com/libbymiller/inventotron-3000
+
 ## Screenshot
 
 <img src="screenshot.png" />
